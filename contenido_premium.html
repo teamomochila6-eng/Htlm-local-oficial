@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Premium - Contenido Exclusivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 40px 30px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+        
+        .logo {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #FF0080, #FF8C00, #40E0D0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #FF416C, #FF4B2B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 35px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn i {
+            font-size: 24px;
+        }
+        
+        .btn-1 {
+            background: linear-gradient(135deg, #FF416C, #FF4B2B);
+            color: white;
+        }
+        
+        .btn-1:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 65, 108, 0.4);
+        }
+        
+        .btn-2 {
+            background: linear-gradient(135deg, #4776E6, #8E54E9);
+            color: white;
+        }
+        
+        .btn-2:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(71, 118, 230, 0.4);
+        }
+        
+        .btn-3 {
+            background: linear-gradient(135deg, #00b09b, #96c93d);
+            color: white;
+        }
+        
+        .btn-3:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 176, 155, 0.4);
+        }
+        
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .btn:hover::after {
+            left: 100%;
+        }
+        
+        .warning {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 25px;
+            border-left: 4px solid #FF416C;
+        }
+        
+        .warning p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .btn {
+                padding: 18px;
+                font-size: 16px;
+            }
+            
+            .logo {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-gem"></i>
+        </div>
+        
+        <h1>CONTENIDO PREMIUM EXCLUSIVO</h1>
+        <p class="subtitle">Accede a nuestro material exclusivo con un solo clic. Totalmente privado y seguro.</p>
+        
+        <div class="buttons-container">
+            <!-- BOTÓN 1: Carpeta con videos -->
+            <a href="https://nowplaytoc.com/1995868611902058497" class="btn btn-1" target="_blank">
+                <i class="fas fa-fire"></i>
+                <span>🔥 MIRA LA CARPETA SNAP CON VIDEOS CALIENTES</span>
+            </a>
+            
+            <!-- BOTÓN 2: Canal de Telegram -->
+            <a href="https://t.me/+KrxOfD0aeodhZmEx" class="btn btn-2" target="_blank">
+                <i class="fab fa-telegram"></i>
+                <span>📢 ÚNETE A NUESTRO CANAL DE TELEGRAM</span>
+            </a>
+            
+            <!-- BOTÓN 3: Bot de descargas -->
+            <a href="https://t.me/DESCARGAVIDieOS_bot" class="btn btn-3" target="_blank">
+                <i class="fas fa-download"></i>
+                <span>💎 DESCARGADOR DE CONTENIDO RESTRINGIDO</span>
+            </a>
+        </div>
+        
+        <div class="warning">
+            <p><i class="fas fa-exclamation-triangle"></i> <strong>ADVERTENCIA:</strong> Este contenido es exclusivo para mayores de 18 años. El acceso es bajo tu propia responsabilidad.</p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 Contenido Premium | Privacidad garantizada</p>
+        </div>
+    </div>
+
+    <script>
+        // Efectos interactivos para los botones
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Efecto de clic
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 200);
+            });
+        });
+        
+        // Detectar si es dispositivo móvil para mejor experiencia
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile) {
+            console.log('📱 Dispositivo móvil detectado - Experiencia optimizada');
+            
+            // Para el botón del bot en móvil, priorizar apertura directa en app
+            const botBtn = document.querySelector('.btn-3');
+            if (botBtn) {
+                botBtn.addEventListener('click', function(e) {
+                    // Si es móvil, intentar abrir directamente en la app
+                    if (isMobile) {
+                        // Primero intentamos abrir la app
+                        window.location.href = "tg://resolve?domain=DESCARGAVIDieOS_bot";
+                        
+                        // Si después de 1.5 segundos no se abrió, redirigimos a la web
+                        setTimeout(() => {
+                            if (document.hasFocus()) {
+                                window.location.href = "https://t.me/DESCARGAVIDieOS_bot";
+                            }
+                        }, 1500);
+                        
+                        e.preventDefault();
+                        return false;
+                    }
+                });
+            }
+        }
+        
+        console.log('🎉 Página premium cargada correctamente');
+    </script>
+</body>
+</html>
